@@ -76,6 +76,30 @@ h3 {
     transform: translateY(-2px);
 }
 
+.btn-code {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.btn-code:hover {
+    background: #333;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
 /* HERO SECTION */
 .hero {
     height: 100vh;
@@ -321,7 +345,7 @@ footer {
         text-align: center;
         gap: 30px;
     }
-    
+
     .about-img-container {
         margin: 0 auto;
         width: 200px;
