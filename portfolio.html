@@ -24,108 +24,124 @@
 
     <div class="container" style="padding-top: 50px;">
         <h1 style="text-align: left; margin-bottom: 10px;">My <span class="highlight">Projects</span></h1>
-        <p style="text-align: left; color: var(--secondary-text); margin-bottom: 40px; max-width: 600px;">
-            A collection of commercial titles, vertical slices, and technical prototypes built in Unity and Unreal
-            Engine 5.
+        <p style="text-align: left; color: var(--secondary-text); margin-bottom: 60px; max-width: 600px;">
+            A collection of commercial titles, vertical slices, and technical prototypes.
         </p>
 
-        <!-- FILTER BUTTONS -->
-        <div class="filter-buttons" style="margin-bottom: 30px;">
-            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
-            <button class="filter-btn" onclick="filterProjects('professional')">Professional</button>
-            <button class="filter-btn" onclick="filterProjects('unreal')">Unreal Engine</button>
-            <button class="filter-btn" onclick="filterProjects('unity')">Unity</button>
-        </div>
+        <!-- MAJOR PROJECTS (Premium Layout) -->
+
+        <!-- VICKY EXPRESS -->
+        <section class="featured-project">
+            <div class="featured-content">
+                <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">FLAGSHIP TITLE</span>
+                <h2>Vicky Express</h2>
+                <p><strong>Genre:</strong> Dieselpunk Base Defense / Roguelite.<br>
+                    Collaborated with CloverBite Studio to build a commercial vertical slice. Defend a moving train on a
+                    hostile alien planet.</p>
+                <div class="tech-stack" style="margin-top: 15px;">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Pixel Art</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="project-vicky.html" class="btn-code">View Project Details</a>
+                    <a href="https://drive.google.com/file/d/1iRemBguLRqV4kmjfx7vHuDmB0Z9puixK/view?usp=sharing"
+                        target="_blank" class="btn-secondary-link">Download</a>
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe src="https://drive.google.com/file/d/1d5TcoOQgQz-0-9dX1Z_jG-CVGwTRD-t5/preview" width="100%"
+                    height="100%" style="position: absolute; top: 0; left: 0; border: none;" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+        <!-- BEARSHIP -->
+        <section class="featured-project" style="direction: rtl;">
+            <div class="featured-content" style="direction: ltr;">
+                <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">3D ADVENTURE</span>
+                <h2>Bearship</h2>
+                <p><strong>Genre:</strong> 3D Platformer.<br>
+                    A whimsical adventure featuring custom character physics, navmesh-based enemy AI, and a dynamic
+                    companion system.</p>
+                <div class="tech-stack" style="margin-top: 15px;">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">3D Physics</span>
+                    <span class="tech-tag">NavMesh</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="project-bearship.html" class="btn-code">View Project Details</a>
+                    <a href="https://drive.google.com/file/d/1diJsvAo8Hb5pGyZ4sHZFsfR3EVx-gYuD/view?usp=drive_link"
+                        target="_blank" class="btn-secondary-link">Download</a>
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe src="https://drive.google.com/file/d/17pu2aUPovvnbg-SjxDPtEOjVlT-jakT0/preview" width="100%"
+                    height="100%" style="position: absolute; top: 0; left: 0; border: none;" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+        <!-- QUESTROOT -->
+        <section class="featured-project">
+            <div class="featured-content">
+                <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">UNREAL 5</span>
+                <h2>QuestRoot</h2>
+                <p><strong>Genre:</strong> Action RPG.<br>
+                    Third-person action RPG featuring a robust combat state machine, dynamic quest system, and spatial
+                    audio.</p>
+                <div class="tech-stack" style="margin-top: 15px;">
+                    <span class="tech-tag">UE5</span>
+                    <span class="tech-tag">Blueprints</span>
+                    <span class="tech-tag">States</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="project-questroot.html" class="btn-code">View Project Details</a>
+                    <a href="https://yonatanamm.itch.io/questroot" target="_blank"
+                        class="btn-secondary-link">Download</a>
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe src="https://drive.google.com/file/d/1JX76ppevdc3rfKI4FZxGSRoMzlAfEIWr/preview" width="100%"
+                    height="100%" style="position: absolute; top: 0; left: 0; border: none;" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+        <!-- CYBER DASH -->
+        <section class="featured-project" style="direction: rtl;">
+            <div class="featured-content" style="direction: ltr;">
+                <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">MOBILE
+                    OPTIMIZATION</span>
+                <h2>Cyber Dash</h2>
+                <p><strong>Genre:</strong> Endless Runner.<br>
+                    High-performance runner optimized for 60FPS on low-end devices. Features object pooling and fluid
+                    touch controls.</p>
+                <div class="tech-stack" style="margin-top: 15px;">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Mobile</span>
+                    <span class="tech-tag">Optimization</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <a href="project-cyberdash.html" class="btn-code">View Project Details</a>
+                    <a href="https://drive.google.com/file/d/1-fwkUF-29o7EOCh6IUfgNM8BE7rK-lAK/view?usp=sharing"
+                        target="_blank" class="btn-secondary-link">APK</a>
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; background: transparent; display: flex; justify-content: center; align-items: center; aspect-ratio: unset; height: 600px; width: 338px; margin: 0 auto; border-radius: 12px; box-shadow: 0 0 30px rgba(0,0,0,0.5);">
+                <iframe src="https://drive.google.com/file/d/1K3HhqCY6d3SbEstk7Jy2f80lo74O10-6/preview" width="100%"
+                    height="100%" style="border: none;" allow="autoplay"></iframe>
+            </div>
+        </section>
+
+
+        <!-- PROTOTYPES GRID -->
+        <br><br>
+        <h2 style="text-align: left; margin-bottom: 30px; border-top: 1px solid #333; padding-top: 40px;">Rapid <span
+                class="highlight">Prototypes</span></h2>
 
         <div class="projects-grid">
-
-            <!-- VICKY EXPRESS -->
-            <article class="project-card" data-category="professional unity">
-                <div class="card-image"
-                    style="background-image: url('assets/images/Vicky Express.png'); background-size: cover; background-position: center;">
-                </div>
-                <div class="card-content">
-                    <h3>Vicky Express</h3>
-                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>Flagship
-                            Title</strong></p>
-                    <p>Dieselpunk Base Defense / Roguelite. Collaborated with a team at CloverBite Studio to build a
-                        commercial vertical slice.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">C#</span>
-                    </div>
-                    <div style="margin-top: 15px;">
-                        <a href="project-vicky.html" class="btn-code" style="width: 100%; justify-content: center;">View
-                            Project</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- BEARSHIP -->
-            <article class="project-card" data-category="unity">
-                <div class="card-image"
-                    style="background-image: url('assets/images/Bearship.png'); background-size: cover; background-position: center;">
-                </div>
-                <div class="card-content">
-                    <h3>Bearship</h3>
-                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>3D
-                            Platformer</strong></p>
-                    <p>A whimsical adventure featuring custom character physics, navmesh-based enemy AI, and a dynamic
-                        companion system.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">3D Physics</span>
-                    </div>
-                    <div style="margin-top: 15px;">
-                        <a href="project-bearship.html" class="btn-code"
-                            style="width: 100%; justify-content: center;">View Project</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- QUESTROOT -->
-            <article class="project-card" data-category="unreal">
-                <div class="card-image"
-                    style="background-image: url('assets/images/QuestRoot 1.png'); background-size: cover; background-position: center;">
-                </div>
-                <div class="card-content">
-                    <h3>QuestRoot</h3>
-                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>Action
-                            RPG</strong></p>
-                    <p>Third-person action RPG featuring a robust combat state machine, dynamic quest system, and
-                        spatial audio.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">UE5</span>
-                        <span class="tech-tag">Blueprints</span>
-                    </div>
-                    <div style="margin-top: 15px;">
-                        <a href="project-questroot.html" class="btn-code"
-                            style="width: 100%; justify-content: center;">View Project</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- CYBER DASH -->
-            <article class="project-card" data-category="unity">
-                <div class="card-image"
-                    style="background-image: url('assets/images/Cyber Dash_AdobeExpress.gif'); background-size: cover; background-position: center;">
-                </div>
-                <div class="card-content">
-                    <h3>Cyber Dash</h3>
-                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>Mobile
-                            Runner</strong></p>
-                    <p>High-performance endless runner optimized for mobile. Achieves 60FPS on low-end devices via
-                        object pooling.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Unity</span>
-                        <span class="tech-tag">Mobile</span>
-                    </div>
-                    <div style="margin-top: 15px;">
-                        <a href="project-cyberdash.html" class="btn-code"
-                            style="width: 100%; justify-content: center;">View Project</a>
-                    </div>
-                </div>
-            </article>
 
             <!-- PIRATE IDLE -->
             <article class="project-card" data-category="ai">
