@@ -303,9 +303,22 @@ footer {
         gap: 30px;
     }
 
+    /* Mobile Safety: Prevent overflows */
+    img,
+    iframe,
+    video {
+        max-width: 100%;
+    }
+
     .featured-project {
         grid-template-columns: 1fr;
         text-align: left;
+        direction: ltr !important;
+        /* Reset direction for mobile stacking */
+    }
+
+    .featured-content {
+        direction: ltr !important;
     }
 
     .section h2 {
