@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Game Developer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAV -->
+    <nav class="sticky-nav visible" style="transform: translateY(0); position: sticky;">
+        <div class="container nav-container">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="highlight">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 50px;">
+        <h1 style="text-align: left; margin-bottom: 10px;">My <span class="highlight">Projects</span></h1>
+        <p style="text-align: left; color: var(--secondary-text); margin-bottom: 40px; max-width: 600px;">
+            A collection of commercial titles, vertical slices, and technical prototypes built in Unity and Unreal
+            Engine 5.
+        </p>
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-buttons" style="margin-bottom: 30px;">
+            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('professional')">Professional</button>
+            <button class="filter-btn" onclick="filterProjects('unreal')">Unreal Engine</button>
+            <button class="filter-btn" onclick="filterProjects('unity')">Unity</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- VICKY EXPRESS -->
+            <article class="project-card" data-category="professional unity">
+                <div class="card-image"
+                    style="background-image: url('assets/images/Vicky Express.png'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>Vicky Express</h3>
+                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>Flagship
+                            Title</strong></p>
+                    <p>Dieselpunk Base Defense / Roguelite. Collaborated with a team at CloverBite Studio to build a
+                        commercial vertical slice.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="project-vicky.html" class="btn-code" style="width: 100%; justify-content: center;">View
+                            Project</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- BEARSHIP -->
+            <article class="project-card" data-category="unity">
+                <div class="card-image"
+                    style="background-image: url('assets/images/Bearship.png'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>Bearship</h3>
+                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>3D
+                            Platformer</strong></p>
+                    <p>A whimsical adventure featuring custom character physics, navmesh-based enemy AI, and a dynamic
+                        companion system.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">3D Physics</span>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="project-bearship.html" class="btn-code"
+                            style="width: 100%; justify-content: center;">View Project</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- QUESTROOT -->
+            <article class="project-card" data-category="unreal">
+                <div class="card-image"
+                    style="background-image: url('assets/images/QuestRoot 1.png'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>QuestRoot</h3>
+                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>Action
+                            RPG</strong></p>
+                    <p>Third-person action RPG featuring a robust combat state machine, dynamic quest system, and
+                        spatial audio.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">UE5</span>
+                        <span class="tech-tag">Blueprints</span>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="project-questroot.html" class="btn-code"
+                            style="width: 100%; justify-content: center;">View Project</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CYBER DASH -->
+            <article class="project-card" data-category="unity">
+                <div class="card-image"
+                    style="background-image: url('assets/images/Cyber Dash_AdobeExpress.gif'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>Cyber Dash</h3>
+                    <p style="font-size: 0.9rem; color: var(--accent-color); margin-bottom: 5px;"><strong>Mobile
+                            Runner</strong></p>
+                    <p>High-performance endless runner optimized for mobile. Achieves 60FPS on low-end devices via
+                        object pooling.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Mobile</span>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="project-cyberdash.html" class="btn-code"
+                            style="width: 100%; justify-content: center;">View Project</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PIRATE IDLE -->
+            <article class="project-card" data-category="ai">
+                <div class="card-image"
+                    style="background-image: url('assets/images/Pirate Incremantal game.png'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>Pirate Idle</h3>
+                    <p><strong>Developed with AI.</strong> An incremental auto-battler. Upgrade your boat and conquer
+                        islands.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">AI Co-Dev</span>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="https://droritos.github.io/Incubator-Prototype/" target="_blank" class="btn-code"
+                            style="flex: 1; font-size: 0.8rem;">Play</a>
+                        <a href="https://github.com/droritos/Incubator-Prototype" target="_blank"
+                            class="btn-secondary-link" style="font-size: 0.8rem;">Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SWIPE FORTRESS -->
+            <article class="project-card" data-category="unity">
+                <div class="card-image"
+                    style="background-image: url('assets/images/Swipe Fortress.png'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>Swipe Fortress</h3>
+                    <p>Pixel art tower defense using swipe gestures. Manage economy to upgrade defenses against goblin
+                        waves.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Construct 3</span>
+                        <span class="tech-tag">2D</span>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="https://droritos.itch.io/swipe-fortress" target="_blank" class="btn-code"
+                            style="flex: 1; font-size: 0.8rem;">Itch.io</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DONT MOVE -->
+            <article class="project-card" data-category="unity">
+                <div class="card-image"
+                    style="background-image: url('assets/images/Dont Move.png'); background-size: cover; background-position: center;">
+                </div>
+                <div class="card-content">
+                    <h3>Don't Move</h3>
+                    <p>SUPERHOT-inspired puzzle action. Time only moves when you move. Stylized cartoon visuals.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Construct 3</span>
+                        <span class="tech-tag">Puzzle</span>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="https://droritos.itch.io/dont-move" target="_blank" class="btn-code"
+                            style="flex: 1; font-size: 0.8rem;">Itch.io</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Ready to <span class="highlight">Collaborate?</span></h2>
+            <p style="color: var(--secondary-text); margin-top: 10px;">Open for Game Developer roles starting 2026.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/dror-vizel-24842326b" target="_blank"
+                    class="contact-link">LinkedIn</a>
+                <a href="https://github.com/droritos" target="_blank" class="contact-link">GitHub</a>
+                <a href="mailto:Drorgu101@gmail.com" class="contact-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuestRoot | Project Details</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAV -->
+    <nav class="sticky-nav visible" style="transform: translateY(0); position: sticky;">
+        <div class="container nav-container">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="highlight">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+        <a href="portfolio.html"
+            style="color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr;
+            Back to Portfolio</a>
+
+        <div class="featured-project" style="margin-bottom: 0;">
+            <div class="featured-content">
+                <h2>QuestRoot</h2>
+                <p><strong>Genre:</strong> Action RPG / Adventure (Action RPG Vertical Slice).<br>
+                    A third-person action RPG featuring a robust combat state machine and questing system.</p>
+                <ul style="margin: 20px 0 20px 20px; color: var(--secondary-text);">
+                    <li><strong>Combat AI:</strong> Implemented State Machine logic for Player/Enemy behaviors (Patrol,
+                        Engage, Retreat).</li>
+                    <li><strong>Systems:</strong> Dynamic Quest System with NPC interactions and level-based loot
+                        progression.</li>
+                    <li><strong>Tech:</strong> Heavy use of AnimNotifies for logic sync and Audio Mixing for spatial
+                        sound.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Unreal Engine 5</span>
+                    <span class="tech-tag">Blueprints</span>
+                    <span class="tech-tag">AI Behavior</span>
+                    <span class="tech-tag">State Machines</span>
+                </div>
+                <div style="display: flex; gap: 15px; margin-top: 15px; align-items: center; flex-wrap: wrap;">
+                    <a href="https://yonatanamm.itch.io/questroot" target="_blank" class="btn-code">Download on
+                        Itch.io</a>
+                </div>
+                <!-- Gallery -->
+                <div class="gallery-strip" style="margin-top: 20px;">
+                    <img src="assets/images/QuestRoot 1.png" class="gallery-thumb" onclick="openLightbox(this.src)">
+                    <img src="assets/images/QuestRoot 2.png" class="gallery-thumb" onclick="openLightbox(this.src)">
+                    <img src="assets/images/QuestRoot 3.png" class="gallery-thumb" onclick="openLightbox(this.src)">
+                    <img src="assets/images/QuestRoot 4.png" class="gallery-thumb" onclick="openLightbox(this.src)">
+                    <img src="assets/images/QuestRoot 5.png" class="gallery-thumb" onclick="openLightbox(this.src)">
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe src="https://drive.google.com/file/d/1JX76ppevdc3rfKI4FZxGSRoMzlAfEIWr/preview" width="100%"
+                    height="100%" style="position: absolute; top: 0; left: 0; border: none;" allow="autoplay"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <footer>
+        <div class="container">
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/dror-vizel-24842326b" target="_blank"
+                    class="contact-link">LinkedIn</a>
+                <a href="https://github.com/droritos" target="_blank" class="contact-link">GitHub</a>
+                <a href="mailto:Drorgu101@gmail.com" class="contact-link">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
