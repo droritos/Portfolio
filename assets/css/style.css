@@ -333,11 +333,18 @@ footer {
         /* Center vertically */
         height: auto;
         /* Allow growth */
-        min-height: 100vh;
+        min-height: auto;
+        /* Changed from 100vh to reduce gap */
         padding-top: 140px;
         /* Space for stacked nav */
-        padding-bottom: 80px;
-        /* Space for scroll indicator */
+        padding-bottom: 60px;
+        /* Reduced from 80px */
+    }
+
+    /* Reduce About Section Gap */
+    #about {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 
     .hero h1 {
