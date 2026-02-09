@@ -359,6 +359,11 @@ footer {
         width: 200px;
         height: 200px;
     }
+
+    /* Hide Scroll Indicator on Mobile due to overlap issues */
+    .scroll-indicator {
+        display: none !important;
+    }
 }
 
 /* Helper for vertical videos */
