@@ -105,7 +105,10 @@ h3 {
 }
 
 /* HERO SECTION */
+/* HERO SECTION */
 .hero {
+    position: relative;
+    /* Ensure absolute children are contained */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -114,6 +117,32 @@ h3 {
     text-align: left;
     /* Text align left */
     background: radial-gradient(circle at center, #1a1a1a 0%, #121212 70%);
+}
+
+/* ... existing styles ... */
+
+@media (max-width: 768px) {
+    /* ... existing styles ... */
+
+    .hero {
+        text-align: left;
+        justify-content: center;
+        /* Center vertically */
+        height: auto;
+        /* Allow growth */
+        min-height: 100vh;
+        padding-top: 140px;
+        /* Space for stacked nav */
+        padding-bottom: 80px;
+        /* Space for scroll indicator */
+    }
+
+    /* ... other styles ... */
+
+    /* Hide Scroll Indicator on Mobile due to overlap issues - STRICT ENFORCEMENT */
+    .scroll-indicator {
+        display: none !important;
+    }
 }
 
 .hero h1 {

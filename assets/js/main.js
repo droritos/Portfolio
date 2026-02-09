@@ -39,7 +39,9 @@ function scrollToTop() {
 function filterProjects(category) {
     // Update buttons
     document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    if (window.event) {
+        window.event.target.classList.add('active');
+    }
 
     // Filter cards
     const cards = document.querySelectorAll('.project-card');
@@ -51,3 +53,13 @@ function filterProjects(category) {
         }
     });
 }
+
+// Random Cyber Dash Thumbnail
+(function () {
+    const cyberDashImg = document.getElementById('cyber-dash-thumbnail');
+    if (cyberDashImg) {
+        const images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        cyberDashImg.src = `assets/thumbnails/cyber-dash/${randomImage}`;
+    }
+})();
