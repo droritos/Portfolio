@@ -282,6 +282,11 @@ footer {
         /* Ensure padding on mobile */
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        margin-top: 20px;
+    }
+
     .hero {
         text-align: left;
         /* Force left align on mobile */
@@ -289,7 +294,7 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero p {
