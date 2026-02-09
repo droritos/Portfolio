@@ -279,7 +279,18 @@ footer {
 @media (max-width: 768px) {
     .container {
         padding: 0 25px;
-        /* Ensure padding on mobile */
+    }
+
+    /* Mobile Nav Fix: Stack items */
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
     }
 
     .projects-grid {
@@ -289,26 +300,39 @@ footer {
 
     .hero {
         text-align: left;
-        /* Force left align on mobile */
-        justify-content: flex-start;
+        justify-content: center;
+        /* Center vertically */
+        height: auto;
+        /* Allow growth */
+        min-height: 100vh;
+        padding-top: 140px;
+        /* Space for stacked nav */
+        padding-bottom: 80px;
+        /* Space for scroll indicator */
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        /* Slighly larger than 2rem but readable */
+        line-height: 1.2;
     }
 
     .hero p {
         margin: 0 0 30px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Fix Scroll Indicator Overlap */
+    .scroll-indicator {
+        bottom: 20px;
     }
 
     .about-grid {
         grid-template-columns: 1fr;
         text-align: left;
-        /* Force left align */
         gap: 30px;
     }
 
-    /* Mobile Safety: Prevent overflows */
     img,
     iframe,
     video {
@@ -319,7 +343,6 @@ footer {
         grid-template-columns: 1fr;
         text-align: left;
         direction: ltr !important;
-        /* Reset direction for mobile stacking */
     }
 
     .featured-content {
@@ -328,8 +351,36 @@ footer {
 
     .section h2 {
         text-align: left !important;
-        /* Force headers left */
     }
+
+    /* About image mobile fix */
+    .about-img-container {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Helper for vertical videos */
+.vertical-video-container {
+    width: 100%;
+    max-width: 350px;
+    /* Limit width */
+    aspect-ratio: 9/16;
+    margin: 0 auto;
+    position: relative;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.vertical-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 /* SCROLL INDICATOR */
