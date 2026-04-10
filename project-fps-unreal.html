@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Shooter Prototype | Project Details</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAV -->
+    <nav class="sticky-nav visible" style="transform: translateY(0); position: sticky;">
+        <div class="container nav-container">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="highlight">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+        <a href="portfolio.html"
+            style="color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr;
+            Back to Portfolio</a>
+
+        <div class="featured-project" style="margin-bottom: 0;">
+            <div class="featured-content">
+                <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">UNREAL 5 / C++</span>
+                <h2>Arena Shooter Prototype</h2>
+                <p><strong>Genre:</strong> First-Person Arena Shooter.<br>
+                    A technical showcase for gameplay programming, custom AI behavior, and modular component design in Unreal Engine 5.</p>
+                
+                <h3 style="color: #fff; font-size: 1.2rem; margin-top: 20px;">Key Features</h3>
+                <ul style="margin: 10px 0 20px 20px; color: var(--secondary-text);">
+                    <li><strong>Custom Weapon System:</strong> Engineered a modular WeaponComponent in C++ utilizing Line-Tracing for accurate hit detection.</li>
+                    <li><strong>Dynamic Recoil:</strong> Implemented a procedural recoil system utilizing a custom FRecoilData struct for smooth weapon offset recovery.</li>
+                    <li><strong>Modular AI:</strong> Built enemy AI powered by Behavior Trees and Blackboards, featuring patrol routines and player detection logic.</li>
+                    <li><strong>Interface-Driven Damage:</strong> Created an IBulletHitInterface to handle interactions between projectiles and the world.</li>
+                    <li><strong>Animation Blending:</strong> Layered Blend Per Bone setup separating lower-body locomotion from upper-body weapon manipulation.</li>
+                </ul>
+
+                <div class="tech-stack">
+                    <span class="tech-tag">UE5</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Blueprints</span>
+                    <span class="tech-tag">Behavior Trees</span>
+                    <span class="tech-tag">Niagara VFX</span>
+                </div>
+                
+                <div style="display: flex; gap: 15px; margin-top: 25px; align-items: center; flex-wrap: wrap;">
+                    <a href="https://drive.google.com/file/d/1RE-NKadlKXwxdanSJv8tXP3LZHShuXDE/view?usp=sharing" target="_blank" class="btn-code">Download EXE (Build)</a>
+                    <a href="https://drive.google.com/file/d/1opgpOwE12FK78T05tm-P3lsfP_15JSRn/view?usp=sharing" target="_blank" class="btn-secondary-link">Download Project ZIP</a>
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+                <!-- Gameplay Video Embed -->
+                <iframe src="https://drive.google.com/file/d/1MIGkvjxe3jRiM2Fp73jUqFti1G30oR7X/preview" width="100%"
+                    height="100%" style="position: absolute; top: 0; left: 0; border: none;" allow="autoplay"></iframe>
+            </div>
+        </div>
+
+        <div style="margin-top: 40px; border-top: 1px solid #333; padding-top: 30px;">
+            <h3 style="color: #fff;">Technical Highlights</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px;">
+                <div>
+                    <h4 style="color: var(--accent-color);">Component-Based Architecture</h4>
+                    <p style="color: var(--secondary-text); font-size: 0.9rem;">The project heavily utilizes Unreal's Actor Component system to keep classes lightweight and reusable (e.g., WeaponComponent handling socket attachment and firing logic).</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--accent-color);">Performance Optimization</h4>
+                    <p style="color: var(--secondary-text); font-size: 0.9rem;">To reduce overhead, frequently accessed variables like WeaponComponent references and socket transforms are cached at initialization rather than fetched on every tick.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact"
+        style="text-align: center; padding: 20px; font-size: 0.9rem; color: #888; margin-top: 50px; border-top: 1px solid #333;">
+        <div class="container">
+            <h2>Ready to <span class="highlight">Collaborate?</span></h2>
+            <p style="color: var(--secondary-text); margin-top: 10px;">Open for Game Developer roles starting 2026.</p>
+            <div class="contact-links" style="margin-bottom: 30px;">
+                <a href="https://www.linkedin.com/in/dror-vizel-24842326b" target="_blank"
+                    class="contact-link">LinkedIn</a>
+                <a href="https://github.com/droritos" target="_blank" class="contact-link">GitHub</a>
+                <a href="mailto:Drorgu101@gmail.com" class="contact-link">Email</a>
+            </div>
+            <p>© 2026 Dror - Game Developer.</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">
+                Powered by <span style="color: #00E5FF;">Antigravity AI</span> | Hosted on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
