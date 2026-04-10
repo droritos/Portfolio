@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fur Architect | Project Details</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- STICKY NAV -->
+    <nav class="sticky-nav visible" style="transform: translateY(0); position: sticky;">
+        <div class="container nav-container">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="highlight">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
+        <!-- BREADCRUMB -->
+        <a href="portfolio.html"
+            style="color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr;
+            Back to Portfolio</a>
+
+        <div class="featured-project" style="margin-bottom: 0;">
+            <div class="featured-content">
+                <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">GPU-DRIVEN SIMULATION</span>
+                <h3 style="color: var(--secondary-text); font-size: 1rem; margin-top: 5px; margin-bottom: 0;">Unity C# & Compute Shaders</h3>
+                <h2>Fur Architect</h2>
+                <p><strong>Genre:</strong> 3D Grooming & Haircut Simulator.<br>
+                    <strong>Role:</strong> Project Architect & Gameplay Developer<br>
+                    A technical achievement in GPU optimization, featuring a real-time grooming engine where every cut and color is calculated with mathematical precision.
+                </p>
+                <h3 style="color: #fff; margin-top: 25px; font-size: 1.2rem;">Core Gameplay Arc</h3>
+                <p style="color: var(--secondary-text);">Players act as a stylist using high-tech tools to match a requested "blueprint" look. The experience blends creative expression with technical puzzle-solving.</p>
+                
+                <ul style="margin: 20px 0 20px 20px; color: var(--secondary-text);">
+                    <li><strong>GPU Grooming Engine:</strong> Leveraging <strong>Custom Render Textures</strong> to handle real-time hair shaving, regrowing (serum), and dyeing without CPU overhead.</li>
+                    <li><strong>Compute Shader Scoring:</strong> Implemented a high-performance verification engine that compares the current fur state against the goal mask in <strong>real-time</strong> to provide 1-3 star ratings.</li>
+                    <li><strong>Diegetic UI:</strong> Enhanced immersion by removing floating menus. All feedback is provided through an <strong>in-world TV monitor</strong> and diegetic sticky notes.</li>
+                    <li><strong>Event-Driven Workflow:</strong> Optimized code maintainability using a centralized <code>EventManager</code>, allowing for decoupled interaction between the character, tools, and UI.</li>
+                </ul>
+
+                <div class="tech-stack">
+                    <span class="tech-tag">Unity</span>
+                    <span class="tech-tag">Compute Shaders</span>
+                    <span class="tech-tag">URP</span>
+                    <span class="tech-tag">C# Architecture</span>
+                </div>
+                <div style="display: flex; gap: 15px; margin-top: 25px; align-items: center; flex-wrap: wrap;">
+                    <span style="color: var(--secondary-text); font-size: 0.9rem; font-style: italic;">Build links available upon request</span>
+                </div>
+            </div>
+            <div class="featured-media"
+                style="padding: 0; border: none; overflow: hidden; position: relative; padding-bottom: 56.25%; height: 0;">
+                <!-- Placeholder for future video -->
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #1a1a1a; display: flex; align-items: center; justify-content: center; color: #555; text-align: center; border: 1px dashed #333;">
+                    <div>
+                        <p style="font-size: 1.5rem; margin-bottom: 10px;">🎥</p>
+                        <p>Gameplay Video Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; border-top: 1px solid #333; padding-top: 40px;">
+            <h3 style="color: #fff; margin-bottom: 30px;">Technical Deep Dive</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div class="technical-card" style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h4 style="color: var(--accent-color); margin-bottom: 15px;">The Scoring Engine</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--secondary-text);">By moving the haircut verification logic to a <strong>Compute Shader</strong>, I was able to perform pixel-by-pixel comparisons on 1024x1024 textures in less than 0.1ms per frame, ensuring perfectly smooth performance even on lower-end hardware.</p>
+                </div>
+                <div class="technical-card" style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                    <h4 style="color: var(--accent-color); margin-bottom: 15px;">Diegetic UX</h4>
+                    <p style="font-size: 0.95rem; line-height: 1.6; color: var(--secondary-text);">The UI is integrated directly into the 3D world. The stylist's TV displays the final score and goal reference, while tools are physically grabbed from the workbench, maintaining a high level of tactile feedback.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contact"
+        style="text-align: center; padding: 20px; font-size: 0.9rem; color: #888; margin-top: 50px; border-top: 1px solid #333;">
+        <div class="container">
+            <h2>Ready to <span class="highlight">Collaborate?</span></h2>
+            <p style="color: var(--secondary-text); margin-top: 10px;">Open for Game Developer roles starting 2026.</p>
+            <div class="contact-links" style="margin-bottom: 30px;">
+                <a href="https://www.linkedin.com/in/dror-vizel-24842326b" target="_blank"
+                    class="contact-link">LinkedIn</a>
+                <a href="https://github.com/droritos" target="_blank" class="contact-link">GitHub</a>
+                <a href="mailto:Drorgu101@gmail.com" class="contact-link">Email</a>
+            </div>
+            <p>© 2026 Dror - Game Developer.</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">
+                Powered by <span style="color: #00E5FF;">Antigravity AI</span> | Hosted on GitHub Pages
+            </p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
