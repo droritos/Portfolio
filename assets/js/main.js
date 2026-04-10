@@ -23,11 +23,11 @@ const heroSection = document.querySelector('.hero');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
-        nav.classList.add('visible');
-        backToTopBtn.classList.add('visible');
+        if (nav) nav.classList.add('visible');
+        if (backToTopBtn) backToTopBtn.classList.add('visible');
     } else {
-        nav.classList.remove('visible');
-        backToTopBtn.classList.remove('visible');
+        if (nav) nav.classList.remove('visible');
+        if (backToTopBtn) backToTopBtn.classList.remove('visible');
     }
 });
 
@@ -54,12 +54,5 @@ function filterProjects(category) {
     });
 }
 
-// Random Cyber Dash Thumbnail
-(function () {
-    const cyberDashImg = document.getElementById('cyber-dash-thumbnail');
-    if (cyberDashImg) {
-        const images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
-        const randomImage = images[Math.floor(Math.random() * images.length)];
-        cyberDashImg.src = `assets/thumbnails/cyber-dash/${randomImage}`;
-    }
-})();
+// Thumbnails are now handled via static paths to high-quality gameplay screenshots.
+
