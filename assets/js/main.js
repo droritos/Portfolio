@@ -73,6 +73,7 @@ function playVideo(element, videoUrl) {
     
     iframe.src = finalUrl;
     iframe.setAttribute('allow', 'autoplay; fullscreen');
+    iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('frameborder', '0');
     iframe.style.position = "absolute";
     iframe.style.top = "0";
@@ -94,3 +95,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Thumbnails are now handled via static paths to high-quality gameplay screenshots.
+
