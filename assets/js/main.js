@@ -54,5 +54,43 @@ function filterProjects(category) {
     });
 }
 
-// Thumbnails are now handled via static paths to high-quality gameplay screenshots.
+// Video Overlay Logic
+function playVideo(element, videoUrl) {
+    // If iframe already exists, don't do anything
+    if (element.querySelector('iframe')) return;
 
+    const placeholder = element.querySelector('.video-placeholder');
+    if (placeholder) {
+        placeholder.style.opacity = '0';
+        setTimeout(() => {
+            placeholder.style.display = 'none';
+        }, 500);
+    }
+
+    const iframe = document.createElement('iframe');
+    // Ensure autoplay is enabled
+    const finalUrl = videoUrl.includes('?') ? `${videoUrl}&autoplay=1` : `${videoUrl}?autoplay=1`;
+    
+    iframe.src = finalUrl;
+    iframe.setAttribute('allow', 'autoplay; fullscreen');
+    iframe.setAttribute('frameborder', '0');
+    iframe.style.position = "absolute";
+    iframe.style.top = "0";
+    iframe.style.left = "0";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    
+    element.appendChild(iframe);
+}
+
+// Ensure all video placeholders are clickable
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.featured-media, .vertical-video-container').forEach(container => {
+        const videoUrl = container.getAttribute('data-video-url');
+        if (videoUrl) {
+            container.addEventListener('click', () => playVideo(container, videoUrl));
+        }
+    });
+});
+
+// Thumbnails are now handled via static paths to high-quality gameplay screenshots.
