@@ -30,29 +30,23 @@
             style="color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr;
             Back to Portfolio</a>
 
-        <div class="featured-project" style="margin-bottom: 0;">
+        <div class="featured-project" style="margin-bottom: 40px;">
             <div class="featured-content">
                 <span style="color: var(--accent-color); font-weight: bold; letter-spacing: 1px;">IN DEVELOPMENT</span>
                 <h2>Turn10</h2>
-                <p><strong>Genre:</strong> Strategic Grid-Based Puzzle / Turn-Based Tactics.<br>
+                <p><strong>Genre:</strong> Relaxing 1010-Style Mobile Puzzle.<br>
                     <strong>Role:</strong> Lead Developer<br>
                     <strong>Status:</strong> Prototype Phase<br>
-                    <strong>Pitch:</strong> A challenging grid-based strategy game where every turn counts. Master the mechanics and optimize your moves to conquer the board.
+                    <strong>The Hook:</strong> Turn10 is a mobile-first puzzle game where you place geometric shapes on a grid to clear lines. Unlike traditional block puzzles, you can **rotate shapes**, adding a layer of deep strategy to a relaxing experience.
                 </p>
-                <ul style="margin: 20px 0 20px 20px; color: var(--secondary-text);">
-                    <li><strong>Grid-Based Mechanics:</strong> Engineered a robust grid system for precise tactical movement and interaction.</li>
-                    <li><strong>Turn-Based Logic:</strong> Implemented a deep turn-based engine focusing on resource management and strategic planning.</li>
-                    <li><strong>Scalable Systems:</strong> Designed with modularity in mind, allowing for rapid iteration of game rules and levels.</li>
-                </ul>
                 <div class="tech-stack">
                     <span class="tech-tag">Unity</span>
                     <span class="tech-tag">C#</span>
-                    <span class="tech-tag">Grid Systems</span>
-                    <span class="tech-tag">Tactical Design</span>
+                    <span class="tech-tag">Mobile UX</span>
+                    <span class="tech-tag">DOTween</span>
                 </div>
                 <div style="display: flex; gap: 15px; margin-top: 15px; align-items: center; flex-wrap: wrap;">
                     <a href="https://github.com/droritos/ZenGrid.git" target="_blank" class="btn-code">View Code</a>
-                    <a href="assets/PDF/Project Summary - Turn10.pdf" target="_blank" class="btn-secondary-link">View Project Summary (PDF)</a>
                     <span class="btn-secondary-link" style="opacity: 0.5; cursor: not-allowed;">Build Coming Soon</span>
                 </div>
             </div>
@@ -63,6 +57,65 @@
                         <p style="font-weight: bold;">Gameplay Video Coming Soon</p>
                         <p style="font-size: 0.8rem; opacity: 0.7;">Trailer currently in production</p>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; border-top: 1px solid #333; padding-top: 40px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                
+                <!-- CORE MECHANICS -->
+                <div>
+                    <h3 style="color: var(--accent-color); margin-bottom: 15px;">Core Gameplay</h3>
+                    <ul style="color: var(--secondary-text); padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Shape Rotation:</strong> The core hook—rotate shapes before placement to manage board space effectively.</li>
+                        <li style="margin-bottom: 10px;"><strong>Dynamic Grid System:</strong> A robust architecture for real-time shape interaction and line-clearing logic.</li>
+                        <li style="margin-bottom: 10px;"><strong>Tranquility Bonuses:</strong> Reward system for clearing multiple lines simultaneously, emphasizing set-up over speed.</li>
+                    </ul>
+                </div>
+
+                <!-- ZEN EXPERIENCE -->
+                <div>
+                    <h3 style="color: var(--accent-color); margin-bottom: 15px;">Zen Experience</h3>
+                    <ul style="color: var(--secondary-text); padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>Glassmorphism UI:</strong> Minimalist visual design focused on soft colors and clean translucency to reduce eye strain.</li>
+                        <li style="margin-bottom: 10px;"><strong>Satisfying Juice:</strong> Subtle DOTween animations and tactile sound effects crafted via AI-guided synthesis.</li>
+                        <li style="margin-bottom: 10px;"><strong>Pure Meditation:</strong> Focus on a singular Zen Mode with no timers, allowing for a focused, calming session.</li>
+                    </ul>
+                </div>
+
+                <!-- TECHNICAL FOUNDATION -->
+                <div style="grid-column: 1 / -1;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 15px;">Technical Foundation</h3>
+                    <p style="color: var(--secondary-text); margin-bottom: 20px;">
+                        Built in a rapid development environment leveraging AI-assisted workflows within the Antigravity IDE.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div style="background: #111; padding: 15px; border-radius: 8px; border: 1px solid #222;">
+                            <strong style="color: #fff;">Data-Driven</strong>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">ScriptableObject architecture for easy balance tweaks and shape additions.</p>
+                        </div>
+                        <div style="background: #111; padding: 15px; border-radius: 8px; border: 1px solid #222;">
+                            <strong style="color: #fff;">Modern Input</strong>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Utilizes Unity's New Input System for precise mobile touch controls.</p>
+                        </div>
+                        <div style="background: #111; padding: 15px; border-radius: 8px; border: 1px solid #222;">
+                            <strong style="color: #fff;">Modular Logic</strong>
+                            <p style="font-size: 0.9rem; margin-top: 5px;">Clean separation between Grid, Score, and Shape management systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST MORTEM / FUTURE -->
+            <div style="margin-top: 40px; background: rgba(0, 229, 255, 0.05); border: 1px solid rgba(0, 229, 255, 0.1); padding: 25px; border-radius: 12px;">
+                <h3 style="color: var(--accent-color); margin-bottom: 10px;">Post-Mortem & Future Iterations</h3>
+                <p style="color: var(--secondary-text); font-style: italic;">
+                    "A critical part of the process was learning when to cut features. Subtractive design—removing complex shaders and floating text—strengthened the core identity of the game as a relaxing experience."
+                </p>
+                <div style="margin-top: 15px; color: var(--secondary-text); font-size: 0.9rem;">
+                    <p>• <strong>Next Step:</strong> Transitioning from Singleton patterns to an Event Bus for improved scalability.</p>
+                    <p>• <strong>Lesson:</strong> AI-assisted scaffolding combined with manual Prefab refining is an incredibly efficient workflow.</p>
                 </div>
             </div>
         </div>
